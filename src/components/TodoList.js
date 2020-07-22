@@ -1,13 +1,19 @@
 import React, { Component } from "react"
 import TodoItem from "./TodoItem"
 
-export class TodoList extends Component {
+class TodoList extends Component {
 	render() {
 		return (
-			<div>
-				Todo List
+			<ul className="list-group my-5">
+				<h3 className="text-capitalize text-center"> todo list</h3>
 				<TodoItem />
-			</div>
+				<button
+					type="submit"
+					className="btn btn-danger btn-block text-capitalize mt-5"
+				>
+					Clear list
+				</button>
+			</ul>
 		)
 	}
 }
